@@ -61,7 +61,7 @@ void _man_probe_pt(const xy_pos_t &xy) {
     ui.defer_status_screen();
     wait_for_user = true;
     #if ENABLED(HOST_PROMPT_SUPPORT)
-      host_prompt_do(PROMPT_USER_CONTINUE, PSTR("Delta Calibration in progress"), CONTINUE_STR);
+      host_prompt_do(PROMPT_USER_CONTINUE, PSTR("Delta Calibration in progress"), PSTR("Continue"));
     #endif
     #if ENABLED(EXTENSIBLE_UI)
       ExtUI::onUserConfirmRequired_P(PSTR("Delta Calibration in progress"));

@@ -181,15 +181,11 @@
   #include "libs/L6470/L6470_Marlin.h"
 #endif
 
-const char NUL_STR[] PROGMEM = "",
-           G28_STR[] PROGMEM = "G28",
+const char G28_STR[] PROGMEM = "G28",
            M21_STR[] PROGMEM = "M21",
            M23_STR[] PROGMEM = "M23 %s",
            M24_STR[] PROGMEM = "M24",
-           SP_X_STR[] PROGMEM = " X",
-           SP_Y_STR[] PROGMEM = " Y",
-           SP_Z_STR[] PROGMEM = " Z",
-           SP_E_STR[] PROGMEM = " E";
+           NUL_STR[] PROGMEM = "";
 
 bool Running = true;
 
